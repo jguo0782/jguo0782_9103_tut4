@@ -12,7 +12,7 @@
 ![Image_of_film_Soul_2](readmeImages/Soul_2.jpg)
 ![Image_of_film_Soul_3](readmeImages/Soul_3.jpg)
 ![Image_of_film_Soul_4](readmeImages/Soul_4.jpg)
-![Image_of_film_Soul_5](readmeImages/Soul_5.jpg)
 ## Part2 Coding Technique Exploration
+:cloud:
 
 
