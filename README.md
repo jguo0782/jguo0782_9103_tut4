@@ -16,7 +16,7 @@ It displays countless particles drawn into motion, following specific trajectori
 I believe that by controlling particle movement through click-based attraction, it is possible to achieve the desired line motion outlined in the first part.  
 Additionally, to achieve the desired effect, it is necessary to modify the color of the particles and restrict the clickable area.  
 #### Code Link
-[Code_link](https://editor.p5js.org/CarolinaPhoenix/sketches/df870Z9-q)
+·[Code_Particle attractors](https://editor.p5js.org/CarolinaPhoenix/sketches/df870Z9-q)
 #### CodeScreenshot
 ![Code_Screenshot](readmeImages/Code_effect_Screenshot.png)
 
