@@ -12,7 +12,7 @@ I believe that by combining the effects of line and particle motion, it is possi
 ![Image_of_film_Soul_1](readmeImages/Soul_1.jpg)
 ![Image_of_film_Soul_2](readmeImages/Soul_2.jpg)
 ### Part2: Coding Technique Exploration
-:ocean:
+:ocean:  
 This coding effect allows particles to be attracted based on clicks, with each click controlling the range of particle movement.  
 It displays countless particles drawn into motion, following specific trajectories that form lines.  
 I believe that by controlling particle movement through click-based attraction, it is possible to achieve the desired line motion outlined in the first part.  
