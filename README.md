@@ -5,5 +5,4 @@ Week 8 quiz for Main Group Work
 **bold**
 [link test](https://dribbble.com/search/p5js)
 
-[An image of the Mona Lisa](readmeImages/Mona_Lisa_by_Leonardo_da_Vinci_500_x_700.jpg)
-[An image of Film Screen shot](/readmeImages/Soul Screenshot .gif)
+[An image of the Film:Soul](readmeImages/Soul_Screenshot.gif)
