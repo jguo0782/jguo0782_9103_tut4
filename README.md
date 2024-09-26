@@ -1,9 +1,6 @@
 # jguo0782_9103_tut4 Project
 ## Week 8 quiz for Main Group Work Prepare
--[Part1:Imaging Technique Inspiration](#part1)
-    -[Describe]()
-    -[Film Screenshots]()
--[Part2:Coding Technique Exploration](#part2)
+
 ### Part1: Imaging Technique Inspiration
 :cloud:  
 I hope to use the line elements of the following work as a source of inspiration.   
