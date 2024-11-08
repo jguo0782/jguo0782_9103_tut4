@@ -10,7 +10,7 @@
     3. [Other Unit Study](#other-unit-study)
 ## Interation Method
 After opening the HTML file, click the **play** button in the **top left corner**. to experience an abstract 3D cityscape animated in sync with the CityPOP track "Plastic Love," using FFT analysis of the audio signal.
-You can adjust the volume with the slider to control sound levels, and the Play/Pause button controls both the music and the animation. The track is set to loop, so it will automatically restart upon completion.    
+You can adjust the volume with the slider to control sound levels, and the Play/Pause button controls both the music and the animation. The track is set to loop, so music will automatically restart upon completion.    
 The camera angle can be adjusted by dragging with the mouse, allowing you to explore the cityscape from different perspectives.  
 ### Design Inspiration and Concept
 The inspiration is comes from modern city and nostalgic culture from recent year‘s internet, combine with audio interation with particle from youtube.  
