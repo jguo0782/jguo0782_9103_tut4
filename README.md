@@ -3,9 +3,10 @@
 - [Part 1: Imaging Technique Inspiration](#part1-imaging-technique-inspiration)
 - [Part 2: Coding Technique Exploration](#part2-coding-technique-exploration)
 ---
-### Interation Method
-After opening the HTML file, click Play to experience an abstract 3D cityscape animated in sync with the CityPOP track "Plastic Love," using FFT analysis of the audio signal. 
-You can adjust the volume with the slider to control sound levels, and the Play/Pause button controls both the music and the animation. The track is set to loop, so it will automatically restart upon completion. The camera angle can be adjusted by dragging with the mouse, allowing you to explore the cityscape from different perspectives.
+## Interation Method
+After opening the HTML file, click Play to experience an abstract 3D cityscape animated in sync with the CityPOP track "Plastic Love," using FFT analysis of the audio signal.  
+You can adjust the volume with the slider to control sound levels, and the Play/Pause button controls both the music and the animation. The track is set to loop, so it will automatically restart upon completion.  
+The camera angle can be adjusted by dragging with the mouse, allowing you to explore the cityscape from different perspectives.
 ### Design Inspiration and Concept
 The inspiration is comes from modern city and nostalgic culture from recent year‘s internet.
 The four main elements each respond to the track in unique ways, creating an abstract cityscape where particles represent moving crowds, vertical lines suggest building outlines, plates and spaces between plates form streets and districts, and boxes symbolize urban vibrancy. CityPOP, a genre popular in the 1980s, reflects urban life and emotions, aligning with Mondrian's Broadway-inspired depiction of city streets.
