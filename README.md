@@ -53,6 +53,22 @@ With a rich distribution of low, mid, and high frequencies, CityPOP music provid
 #### AI USing
  Used AI to modify the range of mouse control in orbitControl to prevent the screen from moving with the mouse when adjusting the volume slider. In the setup function, learned and modified the part where 
  `volumeSlider.elt.addEventListener` in `setup()` is used with the help of ChatGPT.
+ ```
+ //for volume slider
+  volumeSlider.elt.addEventListener('mousedown', function(e) {
+    e.stopPropagation();
+  });
+  volumeSlider.elt.addEventListener('mousemove', function(e) {
+    e.stopPropagation();
+  });
+  volumeSlider.elt.addEventListener('mouseup', function(e) {
+    e.stopPropagation();
+  });
+ // for play button
+ playButton.elt.addEventListener('mousedown', function(e) {
+    e.stopPropagation();
+  });
+ ```
 #### Other Unit Study
 The `colorIndex` method was inspired by the Python `list.index()` method that I learned this semester. In Python, the `list.index()` method returns the index of the first occurrence of an element in a list. Similarly, in the Individual work code, the `indexOf()` method performs a similar operation: it returns the position of `config.color` in the `colorSequence` array, allowing for the reading of the color sequence and executing the color transformation over time. The index is used to track the current position in the color sequence, then used in the updateColor method to cycle through colors.  
 
