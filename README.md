@@ -36,7 +36,14 @@ Implemented a `class Particles` to introduce new visual elements.
 #### Code Reference
 * [Particle with music tutorial from Youtube](https://www.youtube.com/watch?v=uk96O7N1Yo0)  
 * [3D in WEGBL from Youtube](https://www.youtube.com/watch?v=nqiKWXUX-o8)  
-* [Volume Slider reference from ](https://editor.p5js.org/jfforero/sketches/FYr5O5bAx)  
+* [Volume Slider reference](https://editor.p5js.org/jfforero/sketches/FYr5O5bAx)  
+* [Map method used scale values from one range to another](https://p5js.org/zh-Hans/reference/p5/map/)
 * [Use floor() to avoid decimal number](https://p5js.org/zh-Hans/reference/p5/floor/)  
 * [Use millis to returns the number of milliseconds.](https://p5js.org/zh-Hans/reference/p5/millis/)  
-
+#### AI USing
+ Used AI to modify the range of mouse control in orbitControl to prevent the screen from moving with the mouse when adjusting the volume slider. In the setup function, learned and modified the part where 
+ `volumeSlider.elt.addEventListener` in `setup()` is used with the help of ChatGPT.
+#### Other Unit Study
+The `colorIndex` method was inspired by the Python `list.index()` method that I learned this semester. In Python, the `list.index()` method returns the index of the first occurrence of an element in a list. Similarly, in the Individual work code, the `indexOf()` method performs a similar operation: it returns the position of `config.color` in the `colorSequence` array, allowing for the reading of the color sequence and executing the color transformation over time. The index is used to track the current position in the color sequence, then used in the updateColor method to cycle through colors.  
+ 
+For handing error, if the color is not found (indexOf() returns -1), it defaults to 0.
