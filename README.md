@@ -34,9 +34,9 @@ Implemented a `class Particles` to introduce new visual elements.
 * FFT Mapping for `verticalLine` and `RandomBoxes`
 ### Reference
 #### Code Reference
-[Particle with music tutorial from Youtube](https://www.youtube.com/watch?v=uk96O7N1Yo0)
-[3D in WEGBL from Youtube](https://www.youtube.com/watch?v=nqiKWXUX-o8)
-[Volume Slider reference from ](https://editor.p5js.org/jfforero/sketches/FYr5O5bAx)
-[Use floor() to avoid decimal number](https://p5js.org/zh-Hans/reference/p5/floor/)
-[Use millis to returns the number of milliseconds.](https://p5js.org/zh-Hans/reference/p5/millis/)
+* [Particle with music tutorial from Youtube](https://www.youtube.com/watch?v=uk96O7N1Yo0)  
+* [3D in WEGBL from Youtube](https://www.youtube.com/watch?v=nqiKWXUX-o8)  
+* [Volume Slider reference from ](https://editor.p5js.org/jfforero/sketches/FYr5O5bAx)  
+* [Use floor() to avoid decimal number](https://p5js.org/zh-Hans/reference/p5/floor/)  
+* [Use millis to returns the number of milliseconds.](https://p5js.org/zh-Hans/reference/p5/millis/)  
 
