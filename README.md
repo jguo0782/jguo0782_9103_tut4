@@ -3,7 +3,7 @@
 1. [Interaction Method](#interaction-method)
 2. [Design Inspiration and Concept](#design-inspiration-and-concept)
 3. [Change to the Group Code](#change-to-the-group-code)
-4. [Steps from Group Work to Individual Work](#steps-from-group-work-to-individual-work)
+    1. [Steps from Group Work to Individual Work](#steps-from-group-work-to-individual-work)
 5. [Reference](#reference)
     1. [Individual Code Reference](#individual-code-reference)
     2. [AI Using](#ai-using)
@@ -34,7 +34,7 @@ With a rich distribution of low, mid, and high frequencies, CityPOP music provid
 
 * Dynamic Color and Size Change:
   Integrated color-changing logic into `initializePlates` where each plate has `colorIndex`, `lastColorChange`, `colorSequence`, and `colorChangeInterval`, enabling timed color shifts. Each randomly generated plate retains its original size for frequency-based resizing.
-### Steps from Group Work to Individual Work
+#### Steps from Group Work to Individual Work
 **Added audio functionality by loading an audio file and initializing FFT in preload, enabling scene-audio interactivity.**
 Implemented a `class Particles` to introduce new visual elements.
 * Designed FFT-based animations for selective elements like vertical lines and random boxes, while others respond to elapsed time to balance aesthetics.
