@@ -1,5 +1,13 @@
 # jguo0782_9103_tut4 Group_E Individual Work
 ### Jingying Guo SID:530759207
+1. [Interaction Method](#interaction-method)
+2. [Design Inspiration and Concept](#design-inspiration-and-concept)
+3. [Change to the Group Code](#change-to-the-group-code)
+4. [Steps from Group Work to Individual Work](#steps-from-group-work-to-individual-work)
+5. [Reference](#reference)
+    1. [Individual Code Reference](#individual-code-reference)
+    2. [AI Using](#ai-using)
+    3. [Other Unit Study](#other-unit-study)
 ## Interation Method
 After opening the HTML file, click Play to experience an abstract 3D cityscape animated in sync with the CityPOP track "Plastic Love," using FFT analysis of the audio signal.
 You can adjust the volume with the slider to control sound levels, and the Play/Pause button controls both the music and the animation. The track is set to loop, so it will automatically restart upon completion.    
