@@ -1,8 +1,5 @@
 # jguo0782_9103_tut4 Group_E Individual Work
-## Broadway
-- [Part 1: Imaging Technique Inspiration](#part1-imaging-technique-inspiration)
-- [Part 2: Coding Technique Exploration](#part2-coding-technique-exploration)
----
+
 ## Interation Method
 After opening the HTML file, click Play to experience an abstract 3D cityscape animated in sync with the CityPOP track "Plastic Love," using FFT analysis of the audio signal.  
 You can adjust the volume with the slider to control sound levels, and the Play/Pause button controls both the music and the animation. The track is set to loop, so it will automatically restart upon completion.  
