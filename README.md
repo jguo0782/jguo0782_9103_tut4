@@ -33,7 +33,7 @@ Implemented a `class Particles` to introduce new visual elements.
 * Camera Adjustment: Repositioned the `camera` for a vertical perspective, making the vertical lines resemble building contours, with FFT-affected elements more visible.
 * FFT Mapping for `verticalLine` and `RandomBoxes`
 ### Reference
-#### Code Reference
+#### Individual Code Reference
 * [Particle with music tutorial from Youtube](https://www.youtube.com/watch?v=uk96O7N1Yo0)  
 * [3D in WEGBL from Youtube](https://www.youtube.com/watch?v=nqiKWXUX-o8)  
 * [Volume Slider reference](https://editor.p5js.org/jfforero/sketches/FYr5O5bAx)  
@@ -47,3 +47,5 @@ Implemented a `class Particles` to introduce new visual elements.
 The `colorIndex` method was inspired by the Python `list.index()` method that I learned this semester. In Python, the `list.index()` method returns the index of the first occurrence of an element in a list. Similarly, in the Individual work code, the `indexOf()` method performs a similar operation: it returns the position of `config.color` in the `colorSequence` array, allowing for the reading of the color sequence and executing the color transformation over time. The index is used to track the current position in the color sequence, then used in the updateColor method to cycle through colors.  
 
 For handing error, if the color is not found `(indexOf() returns -1)`, it defaults to 0.
+
+## Thanks for reading! Enjoy music :musical_note:

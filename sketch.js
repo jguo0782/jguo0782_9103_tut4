@@ -1,11 +1,21 @@
 // This technique was not covered in class but does WEBGL mode to create 3D vision
-/* This technique is from
+/* Some techniques from
+WEBGL mode:
 https://p5js.org/zh-Hans/reference/p5/WEBGL/
 https://p5js.org/zh-Hans/contribute/webgl_mode_architecture/
 https://p5js.org/zh-Hans/tutorials/optimizing-webgl-sketches/
+3D elements:
 https://p5js.org/zh-Hans/examples/3d-geometries/
 https://p5js.org/zh-Hans/reference/p5/box/
+Play Pause button and volume slider:
+https://editor.p5js.org/jfforero/sketches/FYr5O5bAx
+Other method:
+https://p5js.org/zh-Hans/reference/p5/map/
+https://p5js.org/zh-Hans/reference/p5/floor/
+https://p5js.org/zh-Hans/reference/p5/millis/
+Video tutorial from Youtube:
 https://www.youtube.com/watch?v=nqiKWXUX-o8&list=PLRqwX-V7Uu6bPhi8sS1hHJ77n3zRO9FR_
+https://www.youtube.com/watch?v=uk96O7N1Yo0
 */
 
 let song;
@@ -21,6 +31,7 @@ function preload() {
   fft = new p5.FFT();  // Initialize Fast Fourier Transform for audio analysis
   song.setLoop(true);  // Set the audio to loop when it ends
 }
+
 class Scene {
   constructor() {
     // Define the colors used in the scene
@@ -76,6 +87,7 @@ class Scene {
       speedVariation: 3 // Range of speed variation for particles
     };
   }
+
   // Initialize vertical lines based on plate configurations
   initializeVerticalLines() {
     for (let i = 0; i < this.plateConfigs.length; i++) {
@@ -94,6 +106,12 @@ class Scene {
     }
   }
   // Initialize plates based on predefined configurations
+
+  /* For each plate, it uses the configuration values for position size, and color to create a Plate object.
+     It calculates the color index for each plate and ensures it is valid; if the color is not found in colorSequence, it defaults to 0.
+     The last color change time for each plate is set randomly, ensuring each plate changes color at a different time.
+     The entire color sequence and color change interval are passed to each plate to control color changes.
+     */ 
   initializePlates() {
     this.plates = this.plateConfigs.map(config => {
       let plate = new Plate(
@@ -102,15 +120,16 @@ class Scene {
         config.color
       );
       
-      plate.colorIndex = this.colorSequence.indexOf(config.color);
+      plate.colorIndex = this.colorSequence.indexOf(config.color); // Use indexOf() like list.index() in python 
       if (plate.colorIndex === -1) plate.colorIndex = 0;
-      plate.lastColorChange = millis() - random(0, this.colorChangeInterval);
+      plate.lastColorChange = millis() - random(0, this.colorChangeInterval); 
       plate.colorSequence = this.colorSequence;
       plate.colorChangeInterval = this.colorChangeInterval;
       
       return plate;
     });
   }
+
   // Initialize random boxes in the scene with random properties
   initializeRandomBoxes() {
     let boxCount = 20;
@@ -129,13 +148,18 @@ class Scene {
       this.randomBoxes.push(box);
     }
   }
+
    // Draw the scene based on volume and audio spectrum data
   draw(volume, spectrum) {
+    // volume parameter controls audio playback volume at system level
+    // visual effects mainly rely on spectrum data
     background(this.colors.background);
     // Draw vertical lines with scaling based on audio spectrum
     for (let i = 0; i < this.verticalLines.length; i++) {
       let line = this.verticalLines[i];
+      // Map frequency index based on line position relative to canvas width
       let freqIndex = floor(map(line.x, -400, 400, 0, spectrum.length - 1));
+      // Scale height based on frequency intensity
       let freqValue = spectrum[freqIndex];
       let heightScale = map(freqValue, 0, 255, 0.5, 1.5);
       line.currentHeight = line.baseHeight * heightScale;
@@ -198,6 +222,7 @@ class Scene {
     });
   }
 }
+
 // Plate class represents particles 
 class Particle {
   constructor(x, y, z, speed, angle, color) {
@@ -231,6 +256,7 @@ class Particle {
     return this.alpha <= 0;
   }
 }
+
 // Plate class represents a rectangular plate in 3D space
 class Plate {
   constructor(x, y, z, width, height, depth, color) {
@@ -248,7 +274,7 @@ class Plate {
   }
   // Update plate color if enough time has passed
   updateColor() {
-    let currentTime = millis();
+    let currentTime = millis(); //Use millis to returns the number of milliseconds.
     
     if (currentTime - this.lastColorChange >= this.colorChangeInterval) {
       this.colorIndex = (this.colorIndex + 1) % this.colorSequence.length;
@@ -266,6 +292,7 @@ class Plate {
     pop(); // Restore the previous transformation state
   }
 }
+
 // VerticalLine class represents a vertical line in 3D space
 class VerticalLine {
   constructor(x, y, z, height, width, color) {
@@ -288,8 +315,10 @@ class VerticalLine {
     pop(); // Restore the previous transformation state
   }
 }
+
 // Global variable to hold the scene instance
 let scene;
+
 // Setup function runs once when the program starts
 function setup() {
   // This technique was not covered in class , using WEBGL 
@@ -301,6 +330,7 @@ function setup() {
   volumeSlider = createSlider(0, 1, 0.5, 0.01);
   volumeSlider.position(20, 20);
   volumeSlider.input(volumeChanged);
+  // EventListener modification assisted from ChatGPT
   // Prevent slider events from interfering with canvas interactions
   volumeSlider.elt.addEventListener('mousedown', function(e) {
     e.stopPropagation();
@@ -322,6 +352,7 @@ function setup() {
   // Set the initial audio volume based on the slider's default value
   song.setVolume(volume);
 }
+
 function draw() {
   // Analyze the audio spectrum data for visualizing sound frequencies
   let spectrum = fft.analyze();
@@ -332,7 +363,9 @@ function draw() {
 
   orbitControl(); // Allow user to control the camera orbit
 }
+
 // Function to toggle audio playback when the play button is pressed
+// Help user clear status currently
 function togglePlay() {
   if (isPlaying) {
     song.pause();
@@ -345,12 +378,14 @@ function togglePlay() {
   }
   isPlaying = !isPlaying; // Toggle play state
 }
+
 // Function to handle volume changes from the slider
 function volumeChanged() {
   volume = volumeSlider.value();  // Update volume value from slider
   song.setVolume(volume); // Set song volume to match slider
-}// Window resize event handler
+}
+
+// Window resize event handler
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);// Adjust canvas size when the window is resized
 }
-
