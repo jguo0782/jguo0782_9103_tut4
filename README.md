@@ -9,7 +9,7 @@
     2. [AI Using](#ai-using)
     3. [Other Unit Study](#other-unit-study)
 ## Interation Method
-After opening the HTML file, click Play to experience an abstract 3D cityscape animated in sync with the CityPOP track "Plastic Love," using FFT analysis of the audio signal.
+After opening the HTML file, click the **play** button in the **top left corner**. to experience an abstract 3D cityscape animated in sync with the CityPOP track "Plastic Love," using FFT analysis of the audio signal.
 You can adjust the volume with the slider to control sound levels, and the Play/Pause button controls both the music and the animation. The track is set to loop, so it will automatically restart upon completion.    
 The camera angle can be adjusted by dragging with the mouse, allowing you to explore the cityscape from different perspectives.  
 ### Design Inspiration and Concept
@@ -36,10 +36,12 @@ With a rich distribution of low, mid, and high frequencies, CityPOP music provid
   Integrated color-changing logic into `initializePlates` where each plate has `colorIndex`, `lastColorChange`, `colorSequence`, and `colorChangeInterval`, enabling timed color shifts. Each randomly generated plate retains its original size for frequency-based resizing.
 #### Steps from Group Work to Individual Work
 **Added audio functionality by loading an audio file and initializing FFT in preload, enabling scene-audio interactivity.**
-Implemented a `class Particles` to introduce new visual elements.
+* Implemented a `class Particles` to introduce new visual elements.
 * Designed FFT-based animations for selective elements like vertical lines and random boxes, while others respond to elapsed time to balance aesthetics.
 * Camera Adjustment: Repositioned the `camera` for a vertical perspective, making the vertical lines resemble building contours, with FFT-affected elements more visible.
-* FFT Mapping for `verticalLine` and `RandomBoxes`
+* FFT Mapping for `verticalLine` and `RandomBoxes`.  
+* Added a Play/Pause button to toggle the playback mode, allowing users to control the animation and music synchronization.  
+* Included a volume slider to adjust the audio volume, providing users with control over the sound levels in the interactive experience.  
 ### Reference
 #### Individual Code Reference
 * [Particle with music tutorial from Youtube](https://www.youtube.com/watch?v=uk96O7N1Yo0)  

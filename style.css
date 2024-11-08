@@ -6,27 +6,3 @@ html, body {
 canvas {
   display: block;
 }
-
-#volumeSlider {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  width: 150px;
-}
-
-#playButton {
-  position: absolute;
-  top: 10px;
-  left: 170px;
-  padding: 5px 10px;
-  background-color: grey;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-#playButton.playing {
-  background-color: yellow;
-  color: black;
-}

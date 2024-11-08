@@ -2,6 +2,6 @@
   "include": [
     "*.js",
     "libraries/*.js",
-    "/Users/guojingying/.cursor/extensions/wmcicompsci.cs30-p5-1.9.0/p5types/global.d.ts"
+    "/Users/guojingying/.vscode/extensions/wmcicompsci.cs30-p5-1.9.0/p5types/global.d.ts"
   ]
 }
