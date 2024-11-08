@@ -45,5 +45,5 @@ Implemented a `class Particles` to introduce new visual elements.
  `volumeSlider.elt.addEventListener` in `setup()` is used with the help of ChatGPT.
 #### Other Unit Study
 The `colorIndex` method was inspired by the Python `list.index()` method that I learned this semester. In Python, the `list.index()` method returns the index of the first occurrence of an element in a list. Similarly, in the Individual work code, the `indexOf()` method performs a similar operation: it returns the position of `config.color` in the `colorSequence` array, allowing for the reading of the color sequence and executing the color transformation over time. The index is used to track the current position in the color sequence, then used in the updateColor method to cycle through colors.  
- 
-For handing error, if the color is not found (indexOf() returns -1), it defaults to 0.
+
+For handing error, if the color is not found `(indexOf() returns -1)`, it defaults to 0.
