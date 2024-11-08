@@ -6,7 +6,7 @@ You can adjust the volume with the slider to control sound levels, and the Play/
 The camera angle can be adjusted by dragging with the mouse, allowing you to explore the cityscape from different perspectives.
 ### Design Inspiration and Concept
 The inspiration is comes from modern city and nostalgic culture from recent year‘s internet, combine with audio interation with particle from youtube.
-![Code an Audio Visualizer in p5js](jguo0782_9103_tut4/readmeImages/Particle_with_music_inspiration.png)
+![Code an Audio Visualizer in p5js](readmeImages/Particle_with_music_inspiration.png)
 The four main elements each respond to the track in unique ways, creating an abstract cityscape where particles represent moving crowds, vertical lines suggest building outlines, plates and spaces between plates form streets and districts, and boxes symbolize urban vibrancy. CityPOP, a genre popular in the 1980s, reflects urban life and emotions, aligning with Mondrian's Broadway-inspired depiction of city streets.
 With a rich distribution of low, mid, and high frequencies, CityPOP music provides a layered animation through FFT analysis, generating diverse visual responses in each element. Initial attempts to map every element to FFT data proved overwhelming, so selective elements like vertical lines and random boxes, are tied to frequency, while others like plates and particles, are timed to the track by audio.
 ### Change to the Group Code
